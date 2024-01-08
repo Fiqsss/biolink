@@ -1,0 +1,166 @@
+body {
+  margin: 0 0 0 0;
+  background-image: url("/img/BL02.jpeg");
+  background-repeat: repeat-y;
+  background-size: cover;
+}
+
+.header {
+  text-align: center;
+  margin-top: 1.1rem;
+}
+
+.header img {
+  width: 4rem;
+  border-radius: 50%;
+}
+
+.header h3 {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.header p {
+  font-size: 1px;
+  font-weight: 400;
+}
+
+/* end Headfer */
+
+/* start menu list */
+
+.menu-wrapper {
+  margin: -1.2rem 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.menu-wrapper .menu {
+  text-align: center;
+  width: 80%;
+}
+
+.menu-wrapper .menu ul {
+  padding: 0px;
+}
+
+.menu-wrapper .menu ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  list-style: none;
+  margin: 0.7rem;
+  height: 2.7rem;
+  border-radius: 30px;
+  transition: margin 0.5s;
+  box-shadow: 5px 5px 1px #AFEBFB;
+}
+
+.menu-wrapper .menu ul li span {
+  font-size: 0.7rem;
+}
+
+.menu-wrapper .menu #kelas {
+  position: relative;
+}
+
+.menu-wrapper .menu #kelas.open {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  transition:  border-bottom-right-radius 0.5s,border-bottom-left-radius 0.5s;
+
+}
+
+.menu-wrapper .menu ul #kelassecond.open {
+  margin-top: 33rem;
+}
+
+
+
+.menu-wrapper .menu #kelas .arrow {
+  position: absolute;
+  right: 2rem;
+  font-size: 1.3rem;
+}
+
+.menu-wrapper .menu #kelas .kelas-info {
+  position: absolute;
+  padding: 0 4rem;
+  width: 100%;
+  border-radius: 25px;
+  height: 0rem;
+  overflow: hidden;
+  top: 2.7rem;
+  background-color: white;
+  transition: height 0.5s;
+}
+
+.menu-wrapper .menu #kelas .kelas-info.open {
+  height: 29rem;
+  
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  transition: height 0.5s, border-top-right-radius 0.5s, border-top-left-radius 0.5s;
+}
+
+.menu-wrapper .menu #kelas .kelas-info h3 {
+  margin: 2rem 2rem;
+}
+
+.menu-wrapper .menu #kelas button {
+  box-shadow: 4px 4px 1px #FFE347;
+  border-radius: 50%;
+  font-size: 2rem;
+  width: 27px;
+  height: 27px;
+  margin: 14rem 2rem;
+  position: absolute;
+  top: 19rem;
+  border: 1px solid black;
+  transform: opacity 10s;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+
+}
+
+.menu-wrapper .menu #kelas button .arrow{
+  font-size: 1rem;
+  position: absolute;
+  right: 0.3rem;
+  bottom: 0.3rem;
+}
+
+.menu-wrapper .menu #kelas button.close {
+  transition: opacity 0.2s ease-in-out;
+  opacity: 1;
+
+}
+
+
+.sosmed-wrapper
+{
+  display: flex;
+  justify-content: center;
+}
+
+.sosmed-wrapper .sosmed ion-icon
+{
+  font-size: 1.4rem;
+  margin: 1rem 0.3rem;
+}
+
+
+
+/* end Menu list  */
+/* Tablet */
+
+@media (max-width: 1025px) {
+
+  .header p {
+    font-size: 0.8rem;
+  }
+}
